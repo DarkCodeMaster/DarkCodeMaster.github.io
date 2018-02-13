@@ -3,21 +3,12 @@
   
     
     <entry>
-      <title><![CDATA[my first post]]></title>
-      <url>/2018/02/12/my-first-post/</url>
-      <content type="html"><![CDATA[<h1 id="这是第一篇博客-好激动"><a href="#这是第一篇博客-好激动" class="headerlink" title="这是第一篇博客,好激动"></a>这是第一篇博客,好激动</h1><h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo!"></a>Hello Hexo!</h2><a id="more"></a>
-<p>试试看显示更多的功能</p>
-]]></content>
-      
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>/2018/02/11/hello-world/</url>
+      <url>/2018/02/13/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<a id="more"></a>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
@@ -26,10 +17,65 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
       
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> 杂项 </tag>
+            <tag> Hexo </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于github没有贡献值的问题]]></title>
+      <url>/2018/02/13/%E5%85%B3%E4%BA%8Egithub%E6%B2%A1%E6%9C%89%E8%B4%A1%E7%8C%AE%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<h1 id="关于github没有贡献值的问题"><a href="#关于github没有贡献值的问题" class="headerlink" title="关于github没有贡献值的问题"></a>关于github没有贡献值的问题</h1><p>需要设置email地址与github上面的相同,否则不计算贡献值</p>
+<a id="more"></a>
+<h2 id="查看提交信息"><a href="#查看提交信息" class="headerlink" title="查看提交信息"></a>查看提交信息</h2><p>点击进commit页面</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/DarkCodeMaster/nlp/commit/845a9c382ff5f8e1cc1146bb00fa2232f30b3bde</span><br></pre></td></tr></table></figure>
+<p>后面加上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.pathch</span><br></pre></td></tr></table></figure>
+<p>就可以看到提交信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">From 845a9c382ff5f8e1cc1146bb00fa2232f30b3bde Mon Sep 17 00:00:00 2001</span><br><span class="line">From: DarkCodeMaster &lt;rfy1997@qq.com&gt;</span><br><span class="line">Date: Tue, 13 Feb 2018 09:11:11 +0800</span><br><span class="line">Subject: [PATCH] add chapter2</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"> chapter2.py | 0</span><br><span class="line"> 1 file changed, 0 insertions(+), 0 deletions(-)</span><br><span class="line"> create mode 100644 chapter2.py</span><br><span class="line"></span><br><span class="line">diff --git a/chapter2.py b/chapter2.py</span><br><span class="line">new file mode 100644</span><br><span class="line">index 0000000..e69de29</span><br></pre></td></tr></table></figure>
+<h2 id="查看-设置用户名和email"><a href="#查看-设置用户名和email" class="headerlink" title="查看/设置用户名和email"></a>查看/设置用户名和email</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name</span><br><span class="line">[name]</span><br><span class="line">git config --global user.email</span><br><span class="line">[email]</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name name</span><br><span class="line">git config --global user.email email</span><br></pre></td></tr></table></figure>
+<p>要注意的是: 用户名和email地址都没有引号</p>
+<p>更改完再提交,贡献值成功更新</p>
+<p>问题解决</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[my first post]]></title>
+      <url>/2018/02/12/my-first-post/</url>
+      <content type="html"><![CDATA[<h1 id="这是第一篇博客-好激动"><a href="#这是第一篇博客-好激动" class="headerlink" title="这是第一篇博客,好激动"></a>这是第一篇博客,好激动</h1><h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo!"></a>Hello Hexo!</h2><a id="more"></a>
+<p>试试看显示更多的功能</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> Hexo </tag>
             
         </tags>
         
