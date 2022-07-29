@@ -428,6 +428,56 @@
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2022/07/29/Map%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
+                
+                <span class="abstract-title-text">Go Map并发问题解决方案</span>
+            </a>
+            <div class="abstract-content">
+                构造并发操作场景123456789101112131415161718package mainfunc main() &#123;	m := make(map[int]int)	go func() &#123;		for &#123;			_ = m[1]		&#125;    &#125;()	go func() &#123;		for &#123;			m[0] = 1		&#125;    &#125;()	select &#123;&#125;&#125;// 输出// fatal error: concurrent map read and map write
+go的map即使...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/07/29">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/07/29</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+        
+        
+            
+        
+        
+        <span class="post-category" data-categories="Go"">
+            <i class="fas fa-folder post-category-icon"></i>
+            <span class="post-category-text">
+                Go
+            </span>
+        </span>
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="并发">并发</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Map">Map</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2022/07/22/Go%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/">
                 
                 <span class="abstract-title-text">Go常用代码片段</span>
@@ -635,7 +685,14 @@
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
         
         
     
@@ -644,7 +701,7 @@
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 2
+        Total : 3
         </div>
         <!-- search  -->
         
@@ -658,6 +715,12 @@
             <div class="archive-year"> 2022 </div>
             <ul class="year-list">
             
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/29</span>
+            <a class="archive-post-title" href="/2022/07/29/Map%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">Go Map并发问题解决方案</a>
+        </li>
+    
         
         <li class="archive-post-item">
             <span class="archive-post-date">07/22</span>
@@ -684,6 +747,16 @@
             <span class="sidebar-tag-name" data-tags="代码片段">
                 <span class="iconfont-archer">&#xe606;</span>
                 代码片段
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="并发">
+                <span class="iconfont-archer">&#xe606;</span>
+                并发
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="Map">
+                <span class="iconfont-archer">&#xe606;</span>
+                Map
             </span>
         
     </div>
